@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodeo - Main Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <!-- MENU -->
+    <div class="menu">
+        <ul>
+            <li>
+                <div class="menu__hamburger">
+                    <svg width="58" height="37" viewBox="0 0 58 37" xmlns="http://www.w3.org/2000/svg">
+                <rect class="hamburger__line" x="0.328125" y="0.617676" width="56.7763" height="5.67763" rx="2.83882" fill="#C4C4C4"/>
+                <rect class="hamburger__line" x="0.328125" y="15.7578" width="56.7763" height="5.67763" rx="2.83882" fill="#C4C4C4"/>
+                <rect class="hamburger__line" x="0.328125" y="30.8984" width="28.3882" height="5.67763" rx="2.83882" fill="#C4C4C4"/>
+                </svg>
+                </div>
+            </li>
+            <li>
+                <a class="logotype" href="/">
+                    <img src="images/logotype.png" alt="Logotype">
+                </a>
+            </li>
+            <li>
+                <div class="menu__buttons">
+                    <a href="#">
+                        <p>billetterie</p>
+                        <img src="images/button_line.svg" alt="Button Line">
+                    </a>
+                    <a class="menu__cart" href="/cart">
+                        <svg width="54" height="36" viewBox="0 0 54 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_4115)">
+                    <g clip-path="url(#clip1_1_4115)">
+                    <path class="menu__cart_icon" d="M36.3014 2.59668V13.5996H33.8834V2.59668H26.6437V13.5996H24.2257V2.59668H16.9859V13.5996H14.5679V2.59668H7.32812L9.34119 18.0013H13.6817H14.5679H16.9859H24.2257H26.6437H33.8834H36.3014H38.2977H41.5282L43.5412 2.59668H36.3014Z" fill="white"/>
+                    <path class="menu__cart_icon" d="M33.3318 23.8701C31.7442 23.8701 30.2216 24.4878 29.099 25.5872C27.9764 26.6867 27.3457 28.1779 27.3457 29.7327C27.3457 31.2877 27.9763 32.779 29.0989 33.8786C30.2215 34.9783 31.7441 35.5962 33.3318 35.5966C34.9198 35.5966 36.4427 34.9788 37.5656 33.8791C38.6885 32.7794 39.3193 31.2879 39.3193 29.7327C39.3193 28.9627 39.1644 28.2003 38.8635 27.4889C38.5626 26.7775 38.1215 26.1312 37.5655 25.5868C37.0095 25.0424 36.3495 24.6106 35.623 24.316C34.8966 24.0215 34.1181 23.87 33.3318 23.8701ZM33.3318 32.486C32.5869 32.486 31.8725 32.1962 31.3458 31.6803C30.819 31.1644 30.5231 30.4648 30.5231 29.7352C30.5231 29.0057 30.819 28.306 31.3458 27.7902C31.8725 27.2743 32.5869 26.9845 33.3318 26.9845C33.7008 26.9843 34.0662 27.0554 34.4071 27.1935C34.748 27.3317 35.0578 27.5343 35.3187 27.7897C35.5797 28.0452 35.7867 28.3485 35.9279 28.6823C36.0692 29.0161 36.1418 29.3739 36.1418 29.7352C36.1412 30.4646 35.8448 31.1638 35.3178 31.6791C34.7909 32.1945 34.0765 32.4838 33.3318 32.4835V32.486Z" fill="white"/>
+                    <path class="menu__cart_icon" d="M17.5955 23.8701C16.8094 23.87 16.0309 24.0215 15.3045 24.316C14.5782 24.6106 13.9182 25.0424 13.3623 25.5869C12.8064 26.1313 12.3655 26.7776 12.0647 27.489C11.7639 28.2004 11.6092 28.9628 11.6094 29.7327C11.6092 30.5027 11.7639 31.2652 12.0647 31.9766C12.3654 32.688 12.8063 33.3345 13.3622 33.879C13.9181 34.4235 14.5781 34.8555 15.3044 35.1502C16.0308 35.4449 16.8093 35.5966 17.5955 35.5966C19.1835 35.5966 20.7064 34.9788 21.8293 33.8791C22.9521 32.7794 23.5829 31.2879 23.5829 29.7327C23.5829 28.9627 23.4281 28.2003 23.1272 27.4889C22.8262 26.7775 22.3852 26.1312 21.8292 25.5868C21.2732 25.0424 20.6131 24.6106 19.8867 24.316C19.1603 24.0215 18.3817 23.87 17.5955 23.8701ZM17.5955 32.486C16.8506 32.486 16.1362 32.1962 15.6095 31.6803C15.0827 31.1644 14.7868 30.4648 14.7868 29.7352C14.7868 29.0057 15.0827 28.306 15.6095 27.7902C16.1362 27.2743 16.8506 26.9845 17.5955 26.9845C18.3404 26.9845 19.0548 27.2743 19.5816 27.7902C20.1083 28.306 20.4042 29.0057 20.4042 29.7352C20.4035 30.4643 20.1073 31.1634 19.5807 31.6787C19.054 32.194 18.34 32.4835 17.5955 32.4835V32.486Z" fill="white"/>
+                    <path class="menu__cart_icon" d="M41.5403 26.0431V18.8906H9.32617V29.7327H11.0223C11.0223 28.8871 11.1923 28.0498 11.5227 27.2685C11.8532 26.4873 12.3375 25.7775 12.948 25.1795C13.5585 24.5816 14.2833 24.1073 15.081 23.7837C15.8787 23.4601 16.7336 23.2936 17.5971 23.2936C18.4605 23.2936 19.3154 23.4601 20.1131 23.7837C20.9108 24.1073 21.6356 24.5816 22.2461 25.1795C22.8567 25.7775 23.341 26.4873 23.6714 27.2685C24.0018 28.0498 24.1718 28.8871 24.1718 29.7327H26.7593C26.7593 28.8871 26.9294 28.0498 27.2598 27.2685C27.5902 26.4873 28.0745 25.7775 28.685 25.1795C29.2956 24.5816 30.0204 24.1073 30.818 23.7837C31.6157 23.4601 32.4707 23.2936 33.3341 23.2936C34.1976 23.2934 35.0527 23.4598 35.8506 23.7834C36.6484 24.1069 37.3734 24.5812 37.984 25.1791C38.5947 25.777 39.0791 26.4869 39.4096 27.2682C39.7401 28.0496 39.9102 28.887 39.9102 29.7327H49.3312V26.0431H41.5403Z" fill="white"/>
+                    </g>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_1_4115">
+                    <rect width="53" height="35" fill="white" transform="translate(0.328125 0.59668)"/>
+                    </clipPath>
+                    <clipPath id="clip1_1_4115">
+                    <rect width="42" height="33" fill="white" transform="translate(7.32812 2.59668)"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- HOMEPAGE BODY -->
+
+    <section class="homepage">
+        <div class="homepage_wrapper">
+            <div class="homepage__text">
+                <h1>Festival western</h1>
+                <p>SUR LA CÔTE-DE-BEAUPRÉ</p>
+                <p>du 24 au 28aout 2022</p>
+
+                <a href="#">
+                    <div class="red__btn">
+                        <p>Participate</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <img class="homepage__horse" src="images/homepage_horse.png" alt="Homepage Horse">
+    </section>
+
+    <!-- PRESENTED  -->
+    <section class="presented">
+        <div class="presented__wrapper">
+            <div class="section__title">
+                <p class="section__background_text">PRÉSENTÉ PAR</p>
+                <h1 class="section__text">PRÉSENTÉ PAR</h1>
+            </div>
+            <div class="presented__images">
+                <img src="images/presented_1.png" alt="Presented Image">
+                <img src="images/presented_2.png" alt="Presented Image">
+            </div>
+            <p class="presented__text">Quatre journées de prestations musicales et d'épreuves de rodéo</p>
+        </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section class="events">
+        <div class="events__wrapper">
+            <div class="section__title">
+                <p class="section__background_text">billetteries</p>
+                <h1 class="section__text">billetteries</h1>
+            </div>
+            <div class="events__list">
+                <div class="event_vertical">
+                    <img class="event_vertical_image" src="images/events_1.png" alt="Event">
+                    <div class="event_vert_mask">
+                        <div class="event__vert_text">
+                            <p class="event__block_title">Festival</p>
+                            <p class="event__block_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            <a href="#">
+                                <div class="red__btn">
+                                    <p>billetterie</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="events_horizontal">
+                    <div class="event_horizontal_block">
+                        <img class="event_horizontal_image" src="images/events_2.png" alt="Event">
+                        <div class="event_horiz_mask">
+                            <div class="event_horiz_text">
+                                <div>
+                                    <p class="event__block_title">Belles autos d`hier</p>
+                                    <p class="event__block_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </div>
+                                <a href="#">
+                                    <div class="red__btn">
+                                        <p>billetterie</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event_horizontal_block event__bottom_block">
+                        <img class="event_horizontal_image" src="images/events_3.png" alt="Event">
+                        <div class="event_horiz_mask">
+                            <div class="event_horiz_text">
+                                <div>
+                                    <p class="event__block_title">Hommes forts</p>
+                                    <p class="event__block_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </div>
+                                <a href="#">
+                                    <div class="red__btn">
+                                        <p>billetterie</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP -->
+
+    <section class="map">
+        <div class="map__container">
+            <div class="section__title">
+                <p class="section__background_text">PLAN DES SECTIONS</p>
+                <h1 class="section__text">PLAN DES SECTIONS</h1>
+            </div>
+            <div class="map__wrapper">
+                <img src="images/rodeo__map.svg" alt="Rodeo Map">
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+
+    <section class="about">
+        <div class="about__wrapper">
+            <div class="about__text">
+                <h1>About festival</h1>
+                <p class="about__text_desc">L'édition 2022 du Rodéo MSA vous réserve de nombreuses surprises. Que vous soyez amateur d'adrénaline ou que vous soyez en famille, il y en aura pour tous les goûts!</p>
+                <img src="images/Danny_text.svg" alt="Danny">
+            </div>
+        </div>
+        <img class="about__danny" src="images/danny.png" alt="Danny">
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer__block">
+                <img src="images/footer__logo.svg" alt="Footer logo">
+                <p>SUIVEZ-NOUS</p>
+                <div class="footer__block_media">
+                    <a href="#"><svg width="15" height="28" viewBox="0 0 15 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_39_1646)">
+                        <path d="M14.2296 0.976867V5.26927C13.8955 5.26927 13.5719 5.26927 13.2495 5.26927C12.5558 5.27984 11.8601 5.26927 11.1676 5.31364C10.0362 5.38548 9.4304 5.91794 9.36062 7.04624C9.28766 8.23581 9.34476 9.43279 9.34476 10.6667H14.0721C13.8606 12.2842 13.6607 13.8583 13.4524 15.4694H9.3215V27.7772H4.36477V15.4821H0.228516V10.6688H4.36477V10.3244C4.36477 9.07676 4.34045 7.82697 4.39015 6.58034C4.45041 5.077 4.88921 3.69514 5.94336 2.56579C6.8442 1.60018 7.98081 1.08674 9.26651 0.891293C10.7045 0.680001 12.1446 0.817341 13.5825 0.917705C13.795 0.932495 14.0118 0.956794 14.2296 0.976867Z" fill="#820C0C"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_39_1646">
+                        <rect width="14" height="27" fill="white" transform="translate(0.230469 0.77832)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    </a>
+                    <a href="#"><svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_39_1648)">
+                        <path d="M0.336882 14.0795C0.336882 11.8106 0.317179 9.54168 0.336882 7.27387C0.369722 4.23296 1.77197 2.03523 4.50531 0.70367C5.4002 0.28493 6.37891 0.0763078 7.36671 0.0937356C12.0036 0.0937356 16.6406 0.0838803 21.2775 0.0937356C22.7693 0.0856594 24.2247 0.554155 25.4318 1.43101C26.6389 2.30787 27.5347 3.5473 27.9888 4.96882C28.2177 5.6813 28.3307 6.42589 28.3237 7.17422C28.3237 11.7843 28.3237 16.394 28.3237 21.0034C28.3237 24.1264 26.4125 26.7622 23.4547 27.7477C22.743 27.979 21.9984 28.0929 21.2501 28.085C16.6402 28.085 12.031 28.085 7.42254 28.085C4.29732 28.085 1.66798 26.1829 0.674042 23.2219C0.436295 22.4835 0.321277 21.7111 0.333595 20.9355C0.337244 18.6505 0.338342 16.3652 0.336882 14.0795ZM14.3046 25.7405V25.7526C16.5913 25.7526 18.878 25.7679 21.1637 25.7416C21.727 25.744 22.2874 25.6602 22.8253 25.493C24.7727 24.836 25.979 23.1289 25.9845 21.0439C25.9954 16.4068 25.9954 11.7712 25.9845 7.13699C25.9859 6.79126 25.9492 6.44642 25.875 6.10875C25.3671 3.88912 23.5456 2.44696 21.2326 2.44258C16.6351 2.43382 12.035 2.43674 7.4324 2.45134C6.88707 2.45309 6.34517 2.53802 5.82544 2.7032C3.99299 3.2978 2.65097 5.07833 2.66739 7.2454C2.69257 11.8095 2.67394 16.3736 2.67832 20.9333C2.67923 21.2428 2.70045 21.5519 2.74182 21.8586C3.01439 23.9151 4.95957 25.7033 7.03393 25.7339C9.45748 25.7679 11.881 25.7405 14.3046 25.7405Z" fill="#820C0C"/>
+                        <path d="M21.3283 14.1324C21.2889 18.0088 18.1133 21.1406 14.2788 21.0913C10.407 21.0388 7.29602 17.8872 7.33433 14.0546C7.37374 10.1771 10.546 7.04642 14.3839 7.09679C18.2567 7.14826 21.3677 10.3009 21.3283 14.1324ZM14.3313 9.43578C13.72 9.43463 13.1144 9.55411 12.5493 9.78737C11.9842 10.0206 11.4706 10.3631 11.038 10.7952C10.6053 11.2273 10.2621 11.7405 10.028 12.3054C9.79389 12.8703 9.67346 13.4759 9.67361 14.0875C9.67174 14.699 9.79046 15.305 10.023 15.8705C10.2555 16.4361 10.5972 16.9503 11.0287 17.3836C11.4601 17.8169 11.9727 18.1608 12.5372 18.3957C13.1016 18.6306 13.7069 18.7517 14.3182 18.7523C14.9317 18.7551 15.5397 18.6363 16.1071 18.403C16.6746 18.1696 17.1902 17.8262 17.6244 17.3926C18.0586 16.959 18.4027 16.4437 18.6369 15.8765C18.8711 15.3092 18.9908 14.7012 18.989 14.0875C18.9893 13.4759 18.869 12.8702 18.6349 12.3052C18.4009 11.7402 18.0577 11.227 17.625 10.7949C17.1923 10.3628 16.6787 10.0203 16.1135 9.78708C15.5483 9.55386 14.9427 9.43448 14.3313 9.43578Z" fill="#820C0C"/>
+                        <path d="M21.9058 8.25392C21.6779 8.25392 21.4523 8.20897 21.2418 8.12167C21.0312 8.03436 20.84 7.9064 20.679 7.7451C20.5179 7.58381 20.3902 7.39234 20.3032 7.18164C20.2162 6.97095 20.1716 6.74516 20.1719 6.51719C20.1719 6.05252 20.3564 5.60688 20.6849 5.27831C21.0133 4.94973 21.4588 4.76514 21.9233 4.76514C22.3835 4.7711 22.8232 4.95672 23.1486 5.2824C23.474 5.60807 23.6592 6.04804 23.6649 6.50843C23.664 6.73861 23.6178 6.96636 23.529 7.17867C23.4401 7.39098 23.3102 7.58369 23.1469 7.74579C22.9835 7.90788 22.7898 8.03619 22.5769 8.12338C22.3639 8.21057 22.1359 8.25493 21.9058 8.25392Z" fill="#820C0C"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_39_1648">
+                        <rect width="28" height="28" fill="white" transform="translate(0.328125 0.0927734)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="41" height="29" viewBox="0 0 41 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_39_1652)">
+                            <path d="M20.407 28.0848C16.426 28.0848 12.4435 28.0848 8.4626 28.0848C4.83974 28.0739 1.82981 25.9194 0.800964 22.5611C0.574135 21.8162 0.454101 21.043 0.444459 20.2644C0.411623 16.1541 0.41634 12.0453 0.431976 7.93495C0.427703 5.87953 1.23479 3.90546 2.67789 2.4417C4.121 0.977946 6.08347 0.142773 8.13893 0.117651C12.517 0.0629304 16.8826 0.10201 21.2544 0.100446C24.9633 0.100446 28.6721 0.100446 32.381 0.100446C36.0085 0.11139 39.0106 2.26115 40.0426 5.62415C40.2663 6.34292 40.3858 7.09003 40.3976 7.8427C40.432 12.0046 40.4356 16.166 40.4085 20.3269C40.3835 24.5233 36.978 28.0019 32.7828 28.0582C28.6596 28.1145 24.5333 28.0707 20.4085 28.0707L20.407 28.0848ZM20.4226 2.44407C16.4276 2.44407 12.4326 2.44407 8.4376 2.44407C5.15404 2.45189 2.77894 4.85024 2.77737 8.11787C2.77737 12.1235 2.77737 16.129 2.77737 20.1346C2.77737 23.2615 5.15091 25.7146 8.28124 25.724C16.3744 25.749 24.4687 25.749 32.5639 25.724C35.6911 25.7146 38.0631 23.2678 38.0678 20.1346C38.0678 16.103 38.0678 12.0708 38.0678 8.03813C38.0708 7.63548 38.0321 7.23361 37.9521 6.83896C37.3876 4.2061 35.2001 2.45189 32.4513 2.44407C28.4391 2.43938 24.4316 2.44877 20.4226 2.44877V2.44407Z" fill="#820C0C"/>
+                            <path d="M15.3637 14.0043C15.3637 11.9197 15.3637 9.83926 15.3637 7.76299C15.3637 7.1376 15.6326 6.71391 16.1267 6.52473C16.5723 6.35275 16.9586 6.4919 17.3401 6.73267C19.7021 8.22213 22.0674 9.70897 24.4357 11.1932C25.4036 11.8014 26.3745 12.4049 27.3393 13.0193C28.304 13.6338 28.2853 14.6078 27.3221 15.1988C23.9864 17.2428 20.6507 19.2852 17.3151 21.326C16.8726 21.5965 16.43 21.7059 15.9578 21.4323C15.4856 21.1587 15.3559 20.7209 15.3574 20.205C15.3668 18.1381 15.3637 16.0712 15.3637 14.0043ZM17.7435 9.75483V18.3148L24.6436 14.0934L17.7435 9.75483Z" fill="#820C0C"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_39_1652">
+                            <rect width="40" height="28" fill="white" transform="translate(0.423828 0.0927734)"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__block">
+                <p class="footer__block_title">accueil</p>
+                <div class="footer__links">
+                    <a href="#">Lorem ipsum</a>
+                    <a href="#">Lorem ipsum</a>
+                    <a href="#">Lorem ipsum</a>
+                    <a href="#">Lorem ipsum</a>
+                </div>
+            </div>
+            <div class="footer__block">
+                <p class="footer__block_title">STREAMING</p>
+                <div class="footer__links">
+                    <a href="#">Lorem ipsum</a>
+                    <a href="#">Lorem ipsum</a>
+                    <a href="#">Lorem ipsum</a>
+                    <a href="#">Lorem ipsum</a>
+                </div>
+            </div>
+            <div class="footer__block">
+                <p class="footer__block_title">A POROS</p>
+                <div class="footer__links">
+                    <a href="#">Lorem ipsum</a>
+                    <a href="#">Lorem ipsum</a>
+                    <a href="#">Lorem ipsum</a>
+                    <a href="#">Lorem ipsum</a>
+                </div>
+            </div>
+            <div class="footer__block">
+                <p class="footer__block_title">SHOP</p>
+                <div class="footer__links">
+                    <a href="#">Lorem ipsum</a>
+                    <a href="#">Lorem ipsum</a>
+                    <a href="#">Lorem ipsum</a>
+                    <a href="#">Lorem ipsum</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>© 2022 Rodeo MSA. All Rights Reserved </p>
+        </div>
+    </footer>
+    <!-- MENU BLOCK -->
+
+    <div class="menu__block">
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
