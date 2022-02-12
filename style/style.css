@@ -63,6 +63,9 @@ body {
     width: 100vw;
     align-items: center;
     background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: 999;
 }
 
 .hamburger__line {
@@ -141,6 +144,7 @@ body {
     width: 100vw;
     background-repeat: no-repeat;
     position: relative;
+    margin-top: 175px;
 }
 
 .homepage__horse {
@@ -553,8 +557,123 @@ footer {
 
 .menu__block {
     height: 100vh;
+    width: 100vw;
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #242424;
+    padding-left: 90px;
+}
+
+.menu__block_main {
+    margin-top: 200px;
+}
+
+.menu__block_main a {
+    font-family: Gunberg;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 57px;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.menu__block_main a:hover {
+    color: #820C0C;
+}
+
+.menu__block_main li {
+    margin-bottom: 50px;
+}
+
+.menu__festival {
+    align-items: center;
+}
+
+.menu__festival svg {
+    margin-left: 60px;
+}
+
+.menu__media {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__email_title {
+    font-family: Gunberg;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 34px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+}
+
+.menu__email a {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 37px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    margin-top: 10px;
+}
+
+.menu__email {
+    margin-top: 30px;
+}
+
+.menu__plus path {
+    transition: 0.3s;
+}
+
+.menu__festival {
+    cursor: pointer;
+}
+
+.menu__plus {
+    transition: 0.3s;
+}
+
+.menu__festival:hover .menu__plus {
+    fill: #820C0C;
+}
+
+.menu__festival:hover .menu__festival_link {
+    color: #820C0C;
+}
+
+.media__image {
+    transition: 0.3s;
+}
+
+.menu__media a:hover .media__image {
+    fill: #820C0C;
+}
+
+.menu__block_content {
+    width: 100%;
+    height: 100vh;
+    background: #0F0F0F;
+}
+
+.menu__block_main {
     width: 440px;
-    display: none;
+}
+
+.menu__block {
+    display: flex;
+    left: -100vw;
+    transition: 0.7s;
+    transition-timing-function: cubic-bezier(1, 0.01, 0.31, 0.98);
+}
+
+.menu__opened {
+    left: 0;
 }
 
 @media (max-height: 768px) {
