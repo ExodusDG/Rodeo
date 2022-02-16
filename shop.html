@@ -460,6 +460,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/nouislider.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        /* RANGE SLIDER */
+
+        var slider = document.getElementById('slider');
+
+        noUiSlider.create(slider, {
+            start: [20, 80],
+            connect: true,
+            range: {
+                'min': 10,
+                'max': 200
+            }
+        });
+    </script>
 </body>
 
 </html>
