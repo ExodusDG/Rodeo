@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rodeo - Main Page</title>
+    <title>Rodeo - Shop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/nouislider.min.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 
@@ -61,125 +62,195 @@
         </ul>
     </div>
 
-    <!-- HOMEPAGE BODY -->
+    <!-- SHOP -->
 
-    <section class="homepage">
-        <div class="homepage_wrapper">
-            <div class="homepage__text">
-                <h1>Festival western</h1>
-                <p>SUR LA CÔTE-DE-BEAUPRÉ</p>
-                <p>du 24 au 28aout 2022</p>
+    <section class="rodeo__header shop_header">
+        <div class="rodeo__header_container">
+            <h1>shop</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+    </section>
 
-                <a href="#">
-                    <div class="red__btn">
-                        <p>Participate</p>
+    <!-- SHOP -->
+
+    <section class="shop">
+        <div class="shop__container">
+            <div class="shop__menu">
+                <div class="shop__menu_category">
+                    <p class="shop__category_title">Categories</p>
+                    <div class="shop_category_list">
+                        <span class="shop__category_item shop__category_active">PRODUCT 1</span>
+                        <span class="shop__category_item">PRODUCT 2</span>
+                        <span class="shop__category_item">PRODUCT 3</span>
+                    </div>
+                </div>
+                <div class="shop__menu_filter">
+                    <p class="shop__category_title_small">Filter</p>
+                    <div class="shop__item">
+                        <div class="shop__item_range" id="slider">
+                        </div>
+                    </div>
+                    <p class="menu__filter_numbers">Price: <span id="range__from">10</span> - <span id="range__to">200</span></p>
+                </div>
+                <div class="shop__menu_sizes">
+                    <button class="shop__menu_size">L</button>
+                    <button class="shop__menu_size">M</button>
+                    <button class="shop__menu_size">S</button>
+                    <button class="shop__menu_size">XL</button>
+                    <button class="shop__menu_size">XXL</button>
+                </div>
+                <div class="shop__menu_top">
+                    <p class="shop__category_title">Categories</p>
+                    <div class="shop__menu_topitem">
+                        <img src="images/shop/shop_top_1.png" alt="Top Item">
+                        <div class="shop_top_info">
+                            <p class="shop_top_title">Product Name</p>
+                            <div class="shop__top_bottom">
+                                <div class="shop__top_rating">
+                                    <img src="images/shop/red_star.svg" alt="Red Star">
+                                    <img src="images/shop/red_star.svg" alt="Red Star">
+                                    <img src="images/shop/red_star.svg" alt="Red Star">
+                                    <img src="images/shop/red_star.svg" alt="Red Star">
+                                    <img src="images/shop/white_star.svg" alt="White Star">
+                                </div>
+                                <p class="shop__top_price">$99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop__menu_topitem">
+                        <img src="images/shop/shop_top_2.png" alt="Top Item">
+                        <div class="shop_top_info">
+                            <p class="shop_top_title">Product Name</p>
+                            <div class="shop__top_bottom">
+                                <div class="shop__top_rating">
+                                    <img src="images/shop/red_star.svg" alt="Red Star">
+                                    <img src="images/shop/red_star.svg" alt="Red Star">
+                                    <img src="images/shop/red_star.svg" alt="Red Star">
+                                    <img src="images/shop/red_star.svg" alt="Red Star">
+                                    <img src="images/shop/white_star.svg" alt="White Star">
+                                </div>
+                                <p class="shop__top_price">$99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop__menu_topitem">
+                        <img src="images/shop/shop_top_3.png" alt="Top Item">
+                        <div class="shop_top_info">
+                            <p class="shop_top_title">Product Name</p>
+                            <div class="shop__top_bottom">
+                                <div class="shop__top_rating">
+                                    <img src="images/shop/red_star.svg" alt="Red Star">
+                                    <img src="images/shop/red_star.svg" alt="Red Star">
+                                    <img src="images/shop/red_star.svg" alt="Red Star">
+                                    <img src="images/shop/red_star.svg" alt="Red Star">
+                                    <img src="images/shop/white_star.svg" alt="White Star">
+                                </div>
+                                <p class="shop__top_price">$99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop__menu_topitem">
+                        <img src="images/shop/shop_top_4.png" alt="Top Item">
+                        <div class="shop_top_info">
+                            <p class="shop_top_title">Product Name</p>
+                            <div class="shop__top_bottom">
+                                <div class="shop__top_rating">
+                                    <img src="images/shop/red_star.svg" alt="Red Star">
+                                    <img src="images/shop/red_star.svg" alt="Red Star">
+                                    <img src="images/shop/red_star.svg" alt="Red Star">
+                                    <img src="images/shop/red_star.svg" alt="Red Star">
+                                    <img src="images/shop/white_star.svg" alt="White Star">
+                                </div>
+                                <p class="shop__top_price">$99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shop__items">
+                <a href="shop_item.html">
+                    <div class="shop__item">
+                        <img src="images/shop/shop_1.png" alt="Shop Image">
+                        <div class="shop__item_text">
+                            <p class="shop__item_name">Lorem ipsum</p>
+                            <p class="shop__item_price">$99</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="shop_item.html">
+                    <div class="shop__item">
+                        <img src="images/shop/shop_2.png" alt="Shop Image">
+                        <div class="shop__item_text">
+                            <p class="shop__item_name">Lorem ipsum</p>
+                            <p class="shop__item_price">$99</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="shop_item.html">
+                    <div class="shop__item">
+                        <img src="images/shop/shop_3.png" alt="Shop Image">
+                        <div class="shop__item_text">
+                            <p class="shop__item_name">Lorem ipsum</p>
+                            <p class="shop__item_price">$99</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="shop_item.html">
+                    <div class="shop__item">
+                        <img src="images/shop/shop_4.png" alt="Shop Image">
+                        <div class="shop__item_text">
+                            <p class="shop__item_name">Lorem ipsum</p>
+                            <p class="shop__item_price">$99</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="shop_item.html">
+                    <div class="shop__item">
+                        <img src="images/shop/shop_5.png" alt="Shop Image">
+                        <div class="shop__item_text">
+                            <p class="shop__item_name">Lorem ipsum</p>
+                            <p class="shop__item_price">$99</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="shop_item.html">
+                    <div class="shop__item">
+                        <img src="images/shop/shop_6.png" alt="Shop Image">
+                        <div class="shop__item_text">
+                            <p class="shop__item_name">Lorem ipsum</p>
+                            <p class="shop__item_price">$99</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="shop_item.html">
+                    <div class="shop__item">
+                        <img src="images/shop/shop_7.png" alt="Shop Image">
+                        <div class="shop__item_text">
+                            <p class="shop__item_name">Lorem ipsum</p>
+                            <p class="shop__item_price">$99</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="shop_item.html">
+                    <div class="shop__item">
+                        <img src="images/shop/shop_8.png" alt="Shop Image">
+                        <div class="shop__item_text">
+                            <p class="shop__item_name">Lorem ipsum</p>
+                            <p class="shop__item_price">$99</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="shop_item.html">
+                    <div class="shop__item">
+                        <img src="images/shop/shop_9.png" alt="Shop Image">
+                        <div class="shop__item_text">
+                            <p class="shop__item_name">Lorem ipsum</p>
+                            <p class="shop__item_price">$99</p>
+                        </div>
                     </div>
                 </a>
             </div>
         </div>
-        <img class="homepage__horse" src="images/homepage_horse.png" alt="Homepage Horse">
-    </section>
-
-    <!-- PRESENTED  -->
-    <section class="presented">
-        <div class="presented__wrapper">
-            <div class="section__title">
-                <p class="section__background_text">PRÉSENTÉ PAR</p>
-                <h1 class="section__text">PRÉSENTÉ PAR</h1>
-            </div>
-            <div class="presented__images">
-                <img src="images/presented_1.png" alt="Presented Image">
-                <img src="images/presented_2.png" alt="Presented Image">
-            </div>
-            <p class="presented__text">Quatre journées de prestations musicales et d'épreuves de rodéo</p>
-        </div>
-    </section>
-
-    <!-- EVENTS -->
-    <section class="events">
-        <div class="events__wrapper">
-            <div class="section__title">
-                <p class="section__background_text">billetteries</p>
-                <h1 class="section__text">billetteries</h1>
-            </div>
-            <div class="events__list">
-                <div class="event_vertical">
-                    <img class="event_vertical_image" src="images/events_1.png" alt="Event">
-                    <div class="event_vert_mask">
-                        <div class="event__vert_text">
-                            <p class="event__block_title">Festival</p>
-                            <p class="event__block_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                            <a href="#">
-                                <div class="red__btn">
-                                    <p>billetterie</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="events_horizontal">
-                    <div class="event_horizontal_block">
-                        <img class="event_horizontal_image" src="images/events_2.png" alt="Event">
-                        <div class="event_horiz_mask">
-                            <div class="event_horiz_text">
-                                <div>
-                                    <p class="event__block_title">Belles autos d`hier</p>
-                                    <p class="event__block_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                </div>
-                                <a href="#">
-                                    <div class="red__btn">
-                                        <p>billetterie</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event_horizontal_block event__bottom_block">
-                        <img class="event_horizontal_image" src="images/events_3.png" alt="Event">
-                        <div class="event_horiz_mask">
-                            <div class="event_horiz_text">
-                                <div>
-                                    <p class="event__block_title">Hommes forts</p>
-                                    <p class="event__block_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                </div>
-                                <a href="#">
-                                    <div class="red__btn">
-                                        <p>billetterie</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- MAP -->
-
-    <section class="map">
-        <div class="map__container">
-            <div class="section__title">
-                <p class="section__background_text">PLAN DES SECTIONS</p>
-                <h1 class="section__text">PLAN DES SECTIONS</h1>
-            </div>
-            <div class="map__wrapper">
-                <img src="images/rodeo__map.svg" alt="Rodeo Map">
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT -->
-
-    <section class="about">
-        <div class="about__wrapper">
-            <div class="about__text">
-                <h1>About festival</h1>
-                <p class="about__text_desc">L'édition 2022 du Rodéo MSA vous réserve de nombreuses surprises. Que vous soyez amateur d'adrénaline ou que vous soyez en famille, il y en aura pour tous les goûts!</p>
-                <img src="images/Danny_text.svg" alt="Danny">
-            </div>
-        </div>
-        <img class="about__danny" src="images/danny.png" alt="Danny">
     </section>
 
     <!-- FOOTER -->
@@ -387,6 +458,7 @@
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
