@@ -130,16 +130,3 @@ function rodeoSliderPrev() {
         $('#rodeo_line_' + currentSlide).addClass('slider__line_active')
     }
 }
-
-/* RANGE SLIDER */
-
-var slider = document.getElementById('slider');
-
-noUiSlider.create(slider, {
-    start: [20, 80],
-    connect: true,
-    range: {
-        'min': 10,
-        'max': 200
-    }
-});
