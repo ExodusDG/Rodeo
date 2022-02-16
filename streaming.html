@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rodeo - Main Page</title>
+    <title>Rodeo - Streaming Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -61,125 +61,229 @@
         </ul>
     </div>
 
-    <!-- HOMEPAGE BODY -->
-
-    <section class="homepage">
-        <div class="homepage_wrapper">
-            <div class="homepage__text">
-                <h1>Festival western</h1>
-                <p>SUR LA CÔTE-DE-BEAUPRÉ</p>
-                <p>du 24 au 28aout 2022</p>
-
-                <a href="#">
-                    <div class="red__btn">
-                        <p>Participate</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <img class="homepage__horse" src="images/homepage_horse.png" alt="Homepage Horse">
-    </section>
-
-    <!-- PRESENTED  -->
-    <section class="presented">
-        <div class="presented__wrapper">
-            <div class="section__title">
-                <p class="section__background_text">PRÉSENTÉ PAR</p>
-                <h1 class="section__text">PRÉSENTÉ PAR</h1>
-            </div>
-            <div class="presented__images">
-                <img src="images/presented_1.png" alt="Presented Image">
-                <img src="images/presented_2.png" alt="Presented Image">
-            </div>
-            <p class="presented__text">Quatre journées de prestations musicales et d'épreuves de rodéo</p>
-        </div>
-    </section>
-
-    <!-- EVENTS -->
-    <section class="events">
-        <div class="events__wrapper">
-            <div class="section__title">
-                <p class="section__background_text">billetteries</p>
-                <h1 class="section__text">billetteries</h1>
-            </div>
-            <div class="events__list">
-                <div class="event_vertical">
-                    <img class="event_vertical_image" src="images/events_1.png" alt="Event">
-                    <div class="event_vert_mask">
-                        <div class="event__vert_text">
-                            <p class="event__block_title">Festival</p>
-                            <p class="event__block_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                            <a href="#">
-                                <div class="red__btn">
-                                    <p>billetterie</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="events_horizontal">
-                    <div class="event_horizontal_block">
-                        <img class="event_horizontal_image" src="images/events_2.png" alt="Event">
-                        <div class="event_horiz_mask">
-                            <div class="event_horiz_text">
-                                <div>
-                                    <p class="event__block_title">Belles autos d`hier</p>
-                                    <p class="event__block_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                </div>
-                                <a href="#">
-                                    <div class="red__btn">
-                                        <p>billetterie</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event_horizontal_block event__bottom_block">
-                        <img class="event_horizontal_image" src="images/events_3.png" alt="Event">
-                        <div class="event_horiz_mask">
-                            <div class="event_horiz_text">
-                                <div>
-                                    <p class="event__block_title">Hommes forts</p>
-                                    <p class="event__block_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                </div>
-                                <a href="#">
-                                    <div class="red__btn">
-                                        <p>billetterie</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- MAP -->
-
-    <section class="map">
-        <div class="map__container">
-            <div class="section__title">
-                <p class="section__background_text">PLAN DES SECTIONS</p>
-                <h1 class="section__text">PLAN DES SECTIONS</h1>
-            </div>
-            <div class="map__wrapper">
-                <img src="images/rodeo__map.svg" alt="Rodeo Map">
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT -->
+    <!-- STREAMING -->
 
     <section class="about">
         <div class="about__wrapper">
-            <div class="about__text">
-                <h1>About festival</h1>
-                <p class="about__text_desc">L'édition 2022 du Rodéo MSA vous réserve de nombreuses surprises. Que vous soyez amateur d'adrénaline ou que vous soyez en famille, il y en aura pour tous les goûts!</p>
-                <img src="images/Danny_text.svg" alt="Danny">
+            <h1>Festival</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+    </section>
+
+    <!-- STREAMING BODY -->
+
+    <section class="stream">
+        <div class="streaming__slider_bar">
+            <div class="streaming__slider_items">
+                <div class="streaming__slider_item st_slider_active" id="streaming_tv">
+                    <p>tv show</p>
+                </div>
+                <div class="streaming__slider_item" id="streaming_podcast">
+                    <p>podcast</p>
+                </div>
+                <div class="streaming__slider_item" id="streaming_videos">
+                    <p>competition videos</p>
+                </div>
+            </div>
+            <div class="streaming__slider_track">
+                <div class="streaming__slider_line"></div>
             </div>
         </div>
-        <img class="about__danny" src="images/danny.png" alt="Danny">
+
+        <div class="streaming__slider">
+            <div class="streaming__slider_wrapper">
+                <div class="streaming__slider_slide">
+                    <div class="streaming__slide_wrapper">
+                        <div class="streaming__slider_tv">
+                            <div class="streaming__tv_menu">
+                                <p id="streaming__rodeo" class="streaming__menu_active">Rodeo show</p>
+                                <p id="streaming__man">Strongmanshow</p>
+                            </div>
+                            <div class="streaming__video_block">
+                                <img src="images/streaming/streaming_video.png" alt="Streaming Video">
+                                <div class="streaming_video_info">
+                                    <div class="streaming__video_header">
+                                        <p class="streaming__video_title">CHEVAUX DE RODÉO SANS SELLE</p>
+                                        <p class="streaming__video_date">12/07/2022</p>
+                                    </div>
+                                    <p class="streaming__video_desc">Lorem ipsum dolor sit ame</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="streaming__slider_slide">
+                    <div class="streaming__slider_podcast">
+                        <div class="streaming__video_block">
+                            <img src="images/streaming/streaming_podcast.png" alt="Streaming Video">
+                            <div class="streaming_video_info">
+                                <div class="streaming__video_header">
+                                    <p class="streaming__video_title">CHEVAUX DE RODÉO SANS SELLE</p>
+                                    <p class="streaming__video_date">12/07/2022</p>
+                                </div>
+                                <p class="streaming__video_desc" ma>Lorem ipsum dolor sit ame</p>
+                            </div>
+                        </div>
+                        <div class="streaming__video_list">
+                            <div class="section__title">
+                                <p class="section__background_text">past videos</p>
+                                <h1 class="section__text">past videos</h1>
+                            </div>
+                            <div class="streaming__video_items">
+                                <div class="streaming__video_item">
+                                    <img src="images/streaming/previews/video_1.png" alt="Video Preview">
+                                    <div class="video__info">
+                                        <p class="video__info_title">Lorem ipsum</p>
+                                        <p class="video__info_desc">Lorem ipsum dolor sit ame</p>
+                                    </div>
+                                </div>
+                                <div class="streaming__video_item">
+                                    <img src="images/streaming/previews/video_2.png" alt="Video Preview">
+                                    <div class="video__info">
+                                        <p class="video__info_title">Lorem ipsum</p>
+                                        <p class="video__info_desc">Lorem ipsum dolor sit ame</p>
+                                    </div>
+                                </div>
+                                <div class="streaming__video_item">
+                                    <img src="images/streaming/previews/video_3.png" alt="Video Preview">
+                                    <div class="video__info">
+                                        <p class="video__info_title">Lorem ipsum</p>
+                                        <p class="video__info_desc">Lorem ipsum dolor sit ame</p>
+                                    </div>
+                                </div>
+                                <div class="streaming__video_item">
+                                    <img src="images/streaming/previews/video_4.png" alt="Video Preview">
+                                    <div class="video__info">
+                                        <p class="video__info_title">Lorem ipsum</p>
+                                        <p class="video__info_desc">Lorem ipsum dolor sit ame</p>
+                                    </div>
+                                </div>
+                                <div class="streaming__video_item">
+                                    <img src="images/streaming/previews/video_2.png" alt="Video Preview">
+                                    <div class="video__info">
+                                        <p class="video__info_title">Lorem ipsum</p>
+                                        <p class="video__info_desc">Lorem ipsum dolor sit ame</p>
+                                    </div>
+                                </div>
+                                <div class="streaming__video_item">
+                                    <img src="images/streaming/previews/video_1.png" alt="Video Preview">
+                                    <div class="video__info">
+                                        <p class="video__info_title">Lorem ipsum</p>
+                                        <p class="video__info_desc">Lorem ipsum dolor sit ame</p>
+                                    </div>
+                                </div>
+                                <div class="streaming__video_item">
+                                    <img src="images/streaming/previews/video_3.png" alt="Video Preview">
+                                    <div class="video__info">
+                                        <p class="video__info_title">Lorem ipsum</p>
+                                        <p class="video__info_desc">Lorem ipsum dolor sit ame</p>
+                                    </div>
+                                </div>
+                                <div class="streaming__video_item">
+                                    <img src="images/streaming/previews/video_4.png" alt="Video Preview">
+                                    <div class="video__info">
+                                        <p class="video__info_title">Lorem ipsum</p>
+                                        <p class="video__info_desc">Lorem ipsum dolor sit ame</p>
+                                    </div>
+                                </div>
+                                <div class="streaming__video_item">
+                                    <img src="images/streaming/previews/video_2.png" alt="Video Preview">
+                                    <div class="video__info">
+                                        <p class="video__info_title">Lorem ipsum</p>
+                                        <p class="video__info_desc">Lorem ipsum dolor sit ame</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="streaming__slider_slide">
+                    <div class="streaming__slider_videos">
+                        <div class="streaming__video_block">
+                            <img src="images/streaming/streaming_videos.png" alt="Streaming Video">
+                            <div class="streaming_video_info">
+                                <div class="streaming__video_header">
+                                    <p class="streaming__video_title">CHEVAUX DE RODÉO SANS SELLE</p>
+                                    <p class="streaming__video_date">12/07/2022</p>
+                                </div>
+                                <p class="streaming__video_desc" ma>Lorem ipsum dolor sit ame</p>
+                            </div>
+                        </div>
+                        <div class="streaming__video_list">
+                            <div class="section__title">
+                                <p class="section__background_text">past videos</p>
+                                <h1 class="section__text">past videos</h1>
+                            </div>
+                            <div class="streaming__video_items">
+                                <div class="streaming__video_item">
+                                    <img src="images/streaming/previews/video_5.png" alt="Video Preview">
+                                    <div class="video__info">
+                                        <p class="video__info_title">Lorem ipsum</p>
+                                        <p class="video__info_desc">Lorem ipsum dolor sit ame</p>
+                                    </div>
+                                </div>
+                                <div class="streaming__video_item">
+                                    <img src="images/streaming/previews/video_6.png" alt="Video Preview">
+                                    <div class="video__info">
+                                        <p class="video__info_title">Lorem ipsum</p>
+                                        <p class="video__info_desc">Lorem ipsum dolor sit ame</p>
+                                    </div>
+                                </div>
+                                <div class="streaming__video_item">
+                                    <img src="images/streaming/previews/video_7.png" alt="Video Preview">
+                                    <div class="video__info">
+                                        <p class="video__info_title">Lorem ipsum</p>
+                                        <p class="video__info_desc">Lorem ipsum dolor sit ame</p>
+                                    </div>
+                                </div>
+                                <div class="streaming__video_item">
+                                    <img src="images/streaming/previews/video_8.png" alt="Video Preview">
+                                    <div class="video__info">
+                                        <p class="video__info_title">Lorem ipsum</p>
+                                        <p class="video__info_desc">Lorem ipsum dolor sit ame</p>
+                                    </div>
+                                </div>
+                                <div class="streaming__video_item">
+                                    <img src="images/streaming/previews/video_5.png" alt="Video Preview">
+                                    <div class="video__info">
+                                        <p class="video__info_title">Lorem ipsum</p>
+                                        <p class="video__info_desc">Lorem ipsum dolor sit ame</p>
+                                    </div>
+                                </div>
+                                <div class="streaming__video_item">
+                                    <img src="images/streaming/previews/video_7.png" alt="Video Preview">
+                                    <div class="video__info">
+                                        <p class="video__info_title">Lorem ipsum</p>
+                                        <p class="video__info_desc">Lorem ipsum dolor sit ame</p>
+                                    </div>
+                                </div>
+                                <div class="streaming__video_item">
+                                    <img src="images/streaming/previews/video_6.png" alt="Video Preview">
+                                    <div class="video__info">
+                                        <p class="video__info_title">Lorem ipsum</p>
+                                        <p class="video__info_desc">Lorem ipsum dolor sit ame</p>
+                                    </div>
+                                </div>
+                                <div class="streaming__video_item">
+                                    <img src="images/streaming/previews/video_8.png" alt="Video Preview">
+                                    <div class="video__info">
+                                        <p class="video__info_title">Lorem ipsum</p>
+                                        <p class="video__info_desc">Lorem ipsum dolor sit ame</p>
+                                    </div>
+                                </div>
+                                <div class="streaming__video_item">
+                                    <img src="images/streaming/previews/video_5.png" alt="Video Preview">
+                                    <div class="video__info">
+                                        <p class="video__info_title">Lorem ipsum</p>
+                                        <p class="video__info_desc">Lorem ipsum dolor sit ame</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- FOOTER -->
