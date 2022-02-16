@@ -93,7 +93,7 @@ $('.rodeo__slide_line').attr('style', 'width: ' + sliderContainer / sliderCount 
 /* LINES GENERATE END */
 var currentSlide = 1;
 var slideWidth = $('.rodeo__slide').width()
-var slideMargin = Number($('.rodeo__slide').css('margin-right'))
+var slideMargin = Number($('.rodeo__slide').css('margin-right').replace('px', ''))
 
 $('.rodeo__slider_prev').click(function() {
     rodeoSliderPrev()
