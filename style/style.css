@@ -22,6 +22,10 @@ li {
     list-style-type: none;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 
 /* width */
 
@@ -441,7 +445,7 @@ a {
     width: 100vw;
     height: 1000px;
     overflow-y: hidden;
-    margin-top: 200px;
+    margin-top: 100px;
     position: relative;
 }
 
@@ -474,6 +478,10 @@ a {
     margin-top: 10px;
 }
 
+.event__list_mb {
+    display: none;
+}
+
 .about__danny {
     position: absolute;
     right: 0;
@@ -483,7 +491,38 @@ a {
 
 .about__text {
     position: relative;
-    top: 300px;
+    top: 200px;
+}
+
+.about_page h1 {
+    font-family: Gunberg;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 91px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.about_page {
+    height: 635px;
+    margin-top: 175px;
+    padding-top: 175px;
+    background: url('/images/streaming/streaming__header.png');
+    background-size: cover;
+}
+
+.about__page_desc {
+    width: 70%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 40px;
 }
 
 
@@ -718,6 +757,10 @@ footer {
     transition-timing-function: cubic-bezier(1, 0.01, 0.31, 0.98);
 }
 
+.f__cars_mb {
+    display: none;
+}
+
 .menu__festival {
     display: flex;
 }
@@ -773,6 +816,10 @@ footer {
     text-align: center;
     position: relative;
     top: 200px;
+}
+
+.f__section_text .red__btn p::after {
+    width: 138px;
 }
 
 
@@ -1506,8 +1553,12 @@ footer {
 .rodeo__header_img {
     position: absolute;
     right: 0;
+    top: 0px;
+    width: 30vw;
+}
+
+.cars__header_img {
     top: 200px;
-    width: 35vw;
 }
 
 .rodeo__body {
@@ -1732,7 +1783,7 @@ footer {
 }
 
 .strongman__header_img {
-    width: 50vw;
+    width: 40vw;
 }
 
 .strongman__slider {
@@ -1944,11 +1995,11 @@ footer {
 }
 
 .shop__item {
-    width: calc(90% / 3);
+    margin-bottom: 60px;
 }
 
-.shop__item {
-    margin-bottom: 60px;
+.shop__items a div {
+    width: 100%;
 }
 
 .shop__items {
@@ -2184,6 +2235,10 @@ footer {
     margin-top: 175px;
 }
 
+.cart__items_mb {
+    display: none;
+}
+
 .cart_container {
     width: 1140px;
     margin: 0 auto;
@@ -2413,12 +2468,62 @@ footer {
         padding-top: 0vh;
         width: calc(100vw - 200px);
     }
-    .cars__header_img {
-        margin-top: 0vh;
-    }
     .rodeo__schelude {
         width: 90%;
         margin-top: 300px;
+    }
+    .rodeo__header_img {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        width: 40vw;
+    }
+    .cars__header_img {
+        margin-top: 20vh;
+    }
+    .strongman__header_img {
+        top: 100px;
+    }
+    .rodeo__schelude {
+        margin-top: 100px;
+    }
+    .f__section_text {
+        width: 40vw;
+        left: 10vw;
+    }
+    .f_rodeo__img {
+        top: 100px;
+        width: 40vw;
+    }
+    .f_rodeo {
+        height: 900px;
+    }
+    .f_left {
+        text-align: left;
+        left: 55vw;
+    }
+    .f_cars__img {
+        left: 0;
+        top: 350px;
+        width: 40vw;
+    }
+    .f_cars {
+        height: 900px;
+    }
+    .f_man {
+        height: 900px;
+    }
+    .f_man>img {
+        width: 50vw;
+        top: 150px;
+    }
+    .streaming__video_block {
+        width: 70%;
+        height: 400px;
+    }
+    .streaming__slide_wrapper {
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
@@ -2444,6 +2549,24 @@ footer {
     }
     .rodeo__header_container {
         width: calc(100vw - 200px);
+    }
+    .shop__items a {
+        width: 50%;
+    }
+    .shop__container {
+        width: 90%;
+    }
+    .shop__items {
+        width: 100%;
+    }
+    .shop__items {
+        width: 65%;
+    }
+    .shop__menu {
+        width: 240px;
+    }
+    .shop__items a div {
+        width: 90%;
     }
 }
 
@@ -2480,11 +2603,67 @@ footer {
     .rodeo__time_div {
         padding: 10px 50px;
     }
+    .rodeo__slider {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .strongman__container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .strongman__video {
+        padding-bottom: 300px;
+    }
+    .rodeo__body {
+        padding-bottom: 0px;
+    }
+    .streaming__slider {
+        padding-bottom: 400px;
+    }
+    .streaming__video_items {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .streaming__video_item {
+        width: 48%;
+        margin-bottom: 100px;
+        cursor: pointer;
+    }
+    .streaming__video_item img {
+        width: 100%;
+    }
+    .streaming__video_block {
+        width: 90% !important;
+    }
+    .shop__wrapper {
+        width: 90%;
+    }
+    .shop__item_image {
+        width: 50%;
+    }
+    .shop__image_main img {
+        width: 100%;
+        height: 500px;
+        object-fit: none;
+    }
+    .shop__item_info {
+        width: 40%;
+    }
+    .shop__item_desc {
+        width: 100%;
+    }
+    .shop__image__list {
+        width: 80%;
+    }
 }
 
 @media (max-width: 1240px) {
     .event_horizontal_block {
         height: 42%;
+    }
+    .cart_container {
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
@@ -2663,6 +2842,91 @@ footer {
     }
     .rodeo__time_div {
         padding: 10px 0px;
+    }
+    .rodeo__header_img {
+        top: 600px;
+        width: 60vw;
+    }
+    .cars__header_img {
+        top: 500px;
+    }
+    .streaming__video_block {
+        height: 500px;
+    }
+    .strongman__slider {
+        width: 90%;
+    }
+    .strongman__slider_wrapper img {
+        width: calc(100%/3.3);
+    }
+    .rodeo__body {
+        margin-top: 200px;
+    }
+    .rodeo__header {
+        margin-top: 105px;
+    }
+    .festival p {
+        width: 85%;
+    }
+    .f__section_text {
+        top: 100px;
+        text-align: left;
+    }
+    .f__section_text .red__btn p::after {
+        margin-left: 0;
+    }
+    .f__section_text>p {
+        font-size: 20px;
+    }
+    .f_rodeo__img {
+        top: 100px;
+        width: 45vw;
+    }
+    .f_man>img {
+        width: 55vw;
+        top: 150px;
+    }
+    .streaming__video_block {
+        height: 300px;
+    }
+    .streaming__slider_items p {
+        font-size: 35px;
+    }
+    .streaming__slider_item {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .streaming__slider_tv {
+        display: block;
+    }
+    .streaming__video_block {
+        height: 400px;
+        width: 100%;
+        margin-top: 100px;
+    }
+    .streaming__video_title {
+        font-size: 40px;
+    }
+    .streaming__video_date {
+        font-size: 20px;
+    }
+    .streaming__video_desc {
+        margin-top: 0px;
+    }
+    .shop__items a {
+        width: 50%;
+    }
+    .shop__item img {
+        width: 100%;
+    }
+    .shop_header {
+        height: 635px;
+    }
+    .shop__also_item {
+        margin-right: 0px;
+    }
+    .shop__also_block {
+        justify-content: space-between;
     }
 }
 
@@ -2865,6 +3129,184 @@ footer {
         top: 100px;
         width: 90%;
     }
+    .cars__header_img {
+        top: 500px;
+        width: 70vw;
+    }
+    .strongman__header_img {
+        width: 90vw;
+    }
+    .f_rodeo {
+        height: auto;
+        display: block;
+    }
+    .f_rodeo__img {
+        top: 100px;
+        width: 100vw;
+        position: relative;
+    }
+    .f__section_text {
+        width: 80vw;
+        left: 10vw;
+        text-align: center;
+    }
+    .f__section_text .red__btn p::after {
+        margin: 0 auto;
+        padding-bottom: 50px;
+        display: none;
+    }
+    .f__section_text .red__btn p {
+        font-size: 80px;
+        border-bottom: 4px solid #5C0707;
+        padding-bottom: 20px;
+        display: inline-block;
+    }
+    .f_cars {
+        height: auto;
+        display: block;
+        flex-direction: reverse;
+    }
+    .f_cars__img {
+        position: relative;
+        left: 0;
+        display: none;
+        top: 350px;
+    }
+    .f__cars_mb {
+        display: block !important;
+        top: 100px;
+        width: 95vw;
+    }
+    .f_cars {
+        padding-bottom: 200px;
+    }
+    .f_man {
+        height: auto;
+    }
+    .f_man>img {
+        width: 100vw;
+        top: 0px;
+    }
+    .shop__items a {
+        width: 100%;
+    }
+    .shop__menu {
+        width: 30%;
+    }
+    .shop__container {
+        display: block;
+    }
+    .shop__menu {
+        width: 40%;
+        margin: 0 auto;
+    }
+    .shop__items a div {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+    .shop__items {
+        width: 100%;
+    }
+    .shop__item_name {
+        font-size: 86px;
+    }
+    .shop__item_price {
+        font-size: 46px;
+        line-height: 24px;
+        margin-top: 50px;
+    }
+    .shop__page_item {
+        display: block;
+    }
+    .shop__item_info {
+        width: 90%;
+    }
+    .shop__item_image {
+        width: 100%;
+        margin-top: 100px;
+    }
+    .shop__also_block {
+        display: block;
+    }
+    .shop__aslo_buy {
+        text-align: center;
+    }
+    .shop__also_item img {
+        width: 60%;
+    }
+    .shop__also_item {
+        margin-bottom: 50px;
+    }
+    .shop__also_title {
+        font-size: 56px;
+    }
+    .shop__also_price {
+        font-size: 26px;
+        margin-top: 20px;
+    }
+    .cart__items_mb {
+        display: block;
+        margin-top: 80px;
+    }
+    .cart__items {
+        display: none;
+    }
+    .cart__item_mb {
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .item__line {
+        background: url('../images/Line_shop.svg');
+        height: 3px;
+    }
+    .cart__mb_name {
+        margin-top: 20px;
+    }
+    .cart__item_mb_info div {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .cart__item_mb_info p {
+        font-size: 40px;
+    }
+    .cart__item_mb_info span {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 19.1245px;
+        line-height: 29px;
+        /* identical to box height */
+        text-align: right;
+    }
+    .cart__items_count {
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        right: 0;
+    }
+    .cart__total_block {
+        width: 35%;
+    }
+    .cart__total_text {
+        font-size: 34px;
+    }
+    .cart__total_price {
+        font-size: 46px;
+    }
+    .cart__prefooter_text {
+        font-size: 20px;
+        line-height: 35px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -2957,9 +3399,48 @@ footer {
     .rodeo__schelude_block {
         overflow-x: scroll;
     }
+    .rodeo__header_img {
+        top: 650px;
+        width: 85vw;
+    }
+    .streaming__video_block {
+        height: 300px;
+    }
+    .rodeo__body {
+        margin-top: 300px;
+    }
+    .cars__header_img {
+        top: 550px !important;
+    }
+    .strongman__slider {
+        width: 70%;
+        overflow-x: hidden;
+        margin: 0 auto;
+    }
+    .strongman__slider_wrapper img {
+        min-width: 100%;
+    }
+    .strongman__slider_wrapper {
+        transition: 0.7s;
+        transition-timing-function: cubic-bezier(1, 0.01, 0.31, 0.98);
+    }
+    .about_page {
+        padding-top: 75px;
+    }
+    .about__page_desc {
+        width: 90%;
+    }
+    .streaming__video_item {
+        width: 100%;
+        margin-bottom: 50px;
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 490px) {
+    .shop__item_header {
+        background-position-x: -350px;
+    }
     .menu {
         padding-top: 10px;
         padding-bottom: 20px;
@@ -3087,9 +3568,72 @@ footer {
     .streaming__video_block {
         height: 200px;
     }
+    .rodeo__slider_lines {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .rodeo__body {
+        margin-top: 100px;
+    }
+    .strongman__header_img {
+        top: 650px;
+    }
+    .festival__wrapper {
+        text-align: center;
+        position: relative;
+        top: 50px;
+    }
+    .streaming__video_title {
+        font-size: 30px;
+    }
+    .streaming__video_date {
+        font-size: 17px;
+    }
+    .streaming__video_header {
+        align-items: center;
+    }
+    .streaming__video_desc {
+        margin-top: 5px;
+    }
+    .streaming__slider_items p {
+        font-size: 20px;
+    }
+    .shop__menu {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .shop__menu_topitem {
+        width: 70%;
+    }
+    .shop__item_name {
+        font-size: 46px;
+    }
+    .shop__item_price {
+        font-size: 30px;
+        line-height: 24px;
+        margin-top: 20px;
+    }
+    .shop_header .rodeo__header_container p {
+        width: 100%;
+    }
 }
 
 @media (max-width: 430px) {
+    .shop__image__list {
+        width: 100%;
+    }
+    .shop__image__list img {
+        width: 70px;
+        height: 70px;
+    }
+    .shop__menu {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .shop__also_item img {
+        width: 80%;
+    }
     .presented {
         position: relative;
         top: 300px;
@@ -3112,6 +3656,18 @@ footer {
     .rodeo__header_container {
         width: calc(100vw - 50px);
     }
+    .streaming__video_title {
+        font-size: 24px;
+    }
+    .streaming__video_date {
+        font-size: 14px;
+    }
+    .streaming__video_desc {
+        font-size: 14px;
+    }
+    .about__page_desc {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 414px) {
@@ -3120,5 +3676,14 @@ footer {
     }
     .about__danny {
         top: 220px;
+    }
+    .strongman__header_img {
+        top: 750px;
+    }
+}
+
+@media (max-width: 375px) {
+    .about_page h1 {
+        font-size: 76px;
     }
 }
