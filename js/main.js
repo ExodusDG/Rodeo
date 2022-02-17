@@ -5,6 +5,40 @@ $(document).ready(function() {
         $('.about__danny').attr('src', 'images/danny_mob.png')
     }
 
+    /* FAQ */
+
+    var faqVisibleHeight = 65;
+    $('.faq__item').click(function() {
+        var faqHiddenHeight = $(this).find('.faq__item_hidden').height() + 30;
+        if ($(this).hasClass('faq__opened')) {
+            $(this).removeClass('faq__opened')
+            $(this).css('height', faqVisibleHeight + 'px')
+        } else {
+            $(this).addClass('faq__opened')
+            var calculatedHeight = faqVisibleHeight + faqHiddenHeight;
+
+            $(this).css('height', calculatedHeight + 'px')
+        }
+    })
+
+    /* STRONGMAN MB SLIDER */
+    if (bodyWidth < 769) {
+        var strongCounter = 1;
+        var strongSliderWidth = $('.strongman__slider_wrapper').width();
+        setInterval(() => {
+            if (strongCounter < 4) {
+                $('.event__slider_dot').removeClass('event__dot_active')
+                $('#event__dot_' + strongCounter).addClass('event__dot_active')
+                var strongTranslateWidth = (strongCounter - 1) * strongSliderWidth;
+                $('.strongman__slider_wrapper').attr('style', 'transform: translateX(-' + strongTranslateWidth + 'px)')
+                strongCounter++
+            } else {
+                strongCounter = 1;
+            }
+
+        }, 2000);
+    }
+
     /* MAIN PAGE EVENT SLIDER MB */
 
     var eventCounter = 1;
@@ -78,25 +112,6 @@ $(document).ready(function() {
     $('.track-2:last').css('background', 'none')
     $('.track-3:last').css('background', 'none')
 
-
-    /* FAQ */
-
-    var faqVisibleHeight = Number($('.faq__item').css('height'));
-
-    $('.faq__item').click(function() {
-        var $this = $(this)
-
-        var faqHiddenHeight = $this.find('.faq__item_hidden').height() + 30;
-        if ($this.hasClass('faq__opened')) {
-            $this.removeClass('faq__opened')
-            $this.css('height', faqVisibleHeight + 'px')
-        } else {
-            $this.addClass('faq__opened')
-            var calculatedHeight = faqVisibleHeight + faqHiddenHeight;
-            $this.css('height', calculatedHeight + 'px')
-        }
-    })
-
     /* RODEO SLIDER */
 
     /* LINES GENERATE */
@@ -112,7 +127,10 @@ $(document).ready(function() {
         i++
     }
     var sliderContainer = $('.rodeo__slider_lines').width() - (sliderCount * 30)
+
+    $('.rodeo__slide img').width(Number($('.rodeo__slider_wrapper').width()))
     $('.rodeo__slide_line').attr('style', 'width: ' + sliderContainer / sliderCount + 'px')
+
 
     /* LINES GENERATE END */
     var currentSlide = 1;
