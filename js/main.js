@@ -67,9 +67,14 @@ $(document).ready(function() {
     /* MENU  */
 
     $('.menu__hamburger').click(function() {
-        $('.menu__block').toggleClass('menu__opened')
-        $('body').toggleClass('scroll_canseled');
+        $('.menu__block').addClass('menu__opened')
+        $('body').addClass('scroll_canseled');
     })
+    $('.menu__close').click(function() {
+        $('.menu__block').removeClass('menu__opened')
+        $('body').removeClass('scroll_canseled');
+    })
+
 
     $('.menu__festival').hover(function() {
             $('.menu__submenu').addClass('submenu__active')
@@ -172,4 +177,29 @@ $(document).ready(function() {
             $('#rodeo_line_' + currentSlide).addClass('slider__line_active')
         }
     }
+});
+
+$(document).ready(function() {
+    // Добавить плавную прокрутку до всех ссылок
+    $("a").on('click', function(event) {
+
+        // Убедись в этом что .hash имеет значение перед переопределением поведения по умолчанию
+        if (this.hash !== "") {
+            // Запретить поведение щелчка якоря по умолчанию
+            event.preventDefault();
+
+            // Хранить хэш
+            var hash = this.hash;
+
+            // Использование метода animate() jQuery для добавления плавной прокрутки страницы
+            // Необязательное число (800) указывает количество миллисекунд, необходимых для прокрутки до указанной области
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function() {
+
+                // Добавить хэш (#) для URL-адреса после завершения прокрутки (поведение щелчка по умолчанию)
+                window.location.hash = hash;
+            });
+        } // Конец, если
+    });
 });
