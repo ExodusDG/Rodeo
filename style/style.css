@@ -84,6 +84,10 @@ body {
     transition: 0.3s;
 }
 
+.main__menu svg {
+    display: none;
+}
+
 .menu__hamburger {
     cursor: pointer;
 }
@@ -3446,6 +3450,25 @@ footer {
         margin: 0 auto;
         margin-top: 40px;
     }
+    .main__menu svg {
+        display: block;
+    }
+    .fixed__menu {
+        display: none;
+    }
+    .menu__block_header p {
+        font-size: 42px;
+    }
+    .menu__close svg {
+        width: 20px;
+        color: white;
+        fill: white;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .homepage__background_video iframe {
+        transform: scale(3.9);
+    }
 }
 
 @media (max-width: 600px) {
@@ -3605,6 +3628,18 @@ footer {
     }
     .rodeo__header {
         border: none;
+    }
+    .streaming h1 {
+        font-size: 76px;
+        margin-bottom: 20px;
+    }
+    .about_page {
+        padding-top: 0px;
+    }
+    .streaming p {
+        width: 85%;
+        font-size: 18px;
+        line-height: 36px;
     }
 }
 
@@ -3949,5 +3984,15 @@ footer {
 @media (max-width: 375px) {
     .about_page h1 {
         font-size: 76px;
+    }
+    .rodeo__header {
+        margin-top: 20px;
+    }
+    .rodeo__header_img {
+        top: 550px;
+        width: 85vw;
+    }
+    .cars__header_img {
+        top: 400px !important;
     }
 }
