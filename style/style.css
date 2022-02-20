@@ -69,7 +69,7 @@ body {
 }
 
 .menu {
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 50px;
     width: 100vw;
     align-items: center;
@@ -707,11 +707,11 @@ footer {
 }
 
 .menu__close svg:hover {
-    fill: #5C0707;
+    fill: #820C0C;
 }
 
 .menu__block_main {
-    margin-top: 0px;
+    margin-top: 20px;
 }
 
 .menu__block_main a {
@@ -866,6 +866,10 @@ footer {
 
 .menu__festival_active a {
     color: #820C0C;
+}
+
+.menu__festival_active .menu__plus {
+    fill: #820C0C;
 }
 
 .scroll_canseled {
