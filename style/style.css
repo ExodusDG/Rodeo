@@ -3761,7 +3761,7 @@ footer {
         width: 100%;
     }
     .rodeo__header {
-        padding-top: 75px;
+        padding-top: 25px;
     }
     .rodeo__header {
         margin-top: 95px;
@@ -3875,7 +3875,7 @@ footer {
         font-size: 14px;
     }
     .rodeo__header_img {
-        top: 400px;
+        top: 500px;
         width: 85vw;
     }
     .cars_header {
@@ -3965,7 +3965,10 @@ footer {
         top: 340px;
     }
     .rodeo__body {
-        padding-bottom: 100px;
+        padding-bottom: 200px;
+    }
+    .homepage__background_video iframe {
+        transform: scale(4.3);
     }
 }
 
