@@ -3933,10 +3933,10 @@ footer {
     }
     .presented {
         position: relative;
-        top: 300px;
+        top: 0px;
     }
     .events {
-        margin-top: 400px;
+        margin-top: 100px;
     }
     .about__body_contact p {
         font-size: 15px;
@@ -3972,7 +3972,16 @@ footer {
         padding-bottom: 200px;
     }
     .homepage__background_video iframe {
-        transform: scale(4.3);
+        transform: scale(4.9);
+    }
+    .presented {
+        margin-top: 100px;
+    }
+    .homepage_wrapper {
+        max-width: 80%;
+    }
+    .homepage__text h1 {
+        font-size: 55px;
     }
 }
 
